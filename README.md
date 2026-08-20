@@ -1,6 +1,6 @@
 # zed-vimscript
 
-Vimscript syntax highlighting for .vimrc and .vim files in Zed
+Vimscript syntax highlighting for .vimrc and .vim files in Zed.
 
 ## Installation
 
