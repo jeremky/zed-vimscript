@@ -1,0 +1,10 @@
+id = "vimscript"
+name = "Vimscript"
+version = "0.0.1"
+schema_version = 1
+authors = ["JeremKy"]
+description = "Vimscript syntax highlighting for .vimrc and .vim files"
+
+[grammars.vim]
+repository = "https://github.com/tree-sitter-grammars/tree-sitter-vim"
+rev = "039c8d0aa1deae00ddeb0374dd70bcc0ec56938d"
