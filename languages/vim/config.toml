@@ -1,5 +1,4 @@
 name = "Vimscript"
 grammar = "vim"
 path_suffixes = ["vim", "vimrc"]
-file_types = [".vimrc", "_vimrc", ".gvimrc", "vimrc"]
 line_comments = ["\" "]

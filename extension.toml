@@ -3,7 +3,7 @@ name = "Vimscript"
 version = "0.0.1"
 schema_version = 1
 authors = ["JeremKy"]
-description = "Vimscript syntax highlighting for .vimrc and .vim files"
+description = "Vimscript language support for .vimrc and .vim files: syntax highlighting, indentation, code folding, and outline"
 
 [grammars.vim]
 repository = "https://github.com/tree-sitter-grammars/tree-sitter-vim"
