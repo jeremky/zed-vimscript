@@ -357,3 +357,9 @@
   option: (option_name) @_option
   value: (set_value) @function)
   (#any-of? @_option "tagfunc" "tfu" "completefunc" "cfu" "omnifunc" "ofu" "operatorfunc" "opfunc"))
+
+; A keycode's own "<"/">" delimiters (e.g. <CR>, <Esc>, <leader>) would
+; otherwise also match the generic operator list above; keep them uniform
+; with the rest of the keycode instead of coloring them as operators.
+(keycode
+  ["<" ">"] @character.special)
