@@ -1,9 +1,9 @@
 id = "vimscript"
 name = "Vimscript"
-version = "0.0.2"
+version = "0.1.0"
 schema_version = 1
 authors = ["JeremKy"]
-description = "Vimscript language support for .vimrc and .vim files: syntax highlighting, indentation, code folding, and outline"
+description = "Vimscript language support."
 repository = "https://github.com/jeremky/zed-vimscript"
 themes = []
 icon_themes = []
