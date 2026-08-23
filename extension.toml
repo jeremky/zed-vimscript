@@ -1,6 +1,6 @@
 id = "vimscript"
 name = "Vimscript"
-version = "0.0.1"
+version = "0.0.2"
 schema_version = 1
 authors = ["JeremKy"]
 description = "Vimscript language support for .vimrc and .vim files: syntax highlighting, indentation, code folding, and outline"
