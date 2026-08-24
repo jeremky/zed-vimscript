@@ -363,3 +363,25 @@
 ; with the rest of the keycode instead of coloring them as operators.
 (keycode
   ["<" ">"] @character.special)
+
+; Constructs a diff against the grammar's own test corpus showed were falling
+; through with no highlight rule at all.
+(register) @constant.builtin
+
+(mark) @constant.builtin
+
+[
+  (au_once)
+  (au_nested)
+] @constant.builtin
+
+(scope_dict) @module
+
+; "%" as a whole-buffer range (e.g. `%s/foo/bar/`) is aliased to a distinct
+; node by the grammar, so it no longer matches the "%" modulo operator above.
+(file) @punctuation.special
+
+(filetype) @string
+
+; Arguments passed to a user-defined command, e.g. `MyCommand foo bar`.
+(command_argument) @string
