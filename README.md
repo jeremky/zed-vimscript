@@ -1,7 +1,7 @@
 # zed-vimscript
 
-Vimscript language support for Zed: syntax highlighting, indentation, code
-folding, bracket matching, and an outline view for `.vim` and `.vimrc` files.
+Vimscript language support for Zed: syntax highlighting, an outline view,
+code folding, indentation, and bracket matching for `.vim` and `.vimrc` files.
 
 - Highlighting for statements, options, mappings, autocommands, and embedded
   Lua/Ruby/Python/regex blocks, including Vimscript itself inside expression
