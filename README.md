@@ -4,10 +4,15 @@ Vimscript language support for Zed: syntax highlighting, indentation, code
 folding, bracket matching, and an outline view for `.vim` and `.vimrc` files.
 
 - Highlighting for statements, options, mappings, autocommands, and embedded
-  Lua/Ruby/Python/regex blocks
+  Lua/Ruby/Python/regex blocks, including Vimscript itself inside expression
+  options like `foldexpr` and `indentexpr`
 - Outline entries for functions, augroups, autocommands, user commands,
-  mappings, and global/script-scoped variables
+  mappings, for-loop variables, and global/script-scoped variables
 - Folding for `if`, `for`, `while`, `try`, and function blocks
+- Context-aware indentation that aligns `elseif`/`else`/`catch`/`finally`
+  with their opening keyword and indents multi-line parens, lists, and
+  dictionaries
+- Bracket matching for `()`, `[]`, and `{}`
 
 Powered by the [tree-sitter-vim](https://github.com/tree-sitter-grammars/tree-sitter-vim) grammar.
 

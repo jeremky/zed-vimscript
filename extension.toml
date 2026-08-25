@@ -5,21 +5,8 @@ schema_version = 1
 authors = ["JeremKy"]
 description = "Vimscript language support."
 repository = "https://github.com/jeremky/zed-vimscript"
-themes = []
-icon_themes = []
 languages = ["languages/vim"]
-capabilities = []
-
-[lib]
 
 [grammars.vim]
 repository = "https://github.com/tree-sitter-grammars/tree-sitter-vim"
-rev = "039c8d0aa1deae00ddeb0374dd70bcc0ec56938d"
-
-[language_servers]
-
-[context_servers]
-
-[agent_servers]
-
-[slash_commands]
+commit = "039c8d0aa1deae00ddeb0374dd70bcc0ec56938d"
