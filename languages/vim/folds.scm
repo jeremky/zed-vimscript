@@ -4,4 +4,6 @@
   (for_loop)
   (while_loop)
   (try_statement)
+  (heredoc)
+  (script)
 ] @fold
