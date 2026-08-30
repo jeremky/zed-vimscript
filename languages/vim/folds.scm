@@ -7,3 +7,8 @@
   (heredoc)
   (script)
 ] @fold
+
+; Multi-line dictionaries and lists
+(literal_dictionary) @fold
+(dictionnary) @fold
+(list) @fold

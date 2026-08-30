@@ -3,14 +3,25 @@
     name: [(identifier) (scoped_identifier)] @name)) @item
 
 (for_loop
-  variable: (identifier) @name) @item
+  variable: [(identifier) (scoped_identifier)] @name) @item
 
 ; Only surface `let` at script scope, or global/script-scoped variables anywhere,
 ; so the outline isn't cluttered with every local variable inside a function.
+; g:/s: are handled once below (whatever their level) to avoid a duplicate entry
+; for the very common case of a script-level `s:`/`g:` variable.
+((script_file
+   (let_statement
+     .
+     (scoped_identifier
+       (scope) @_scope
+       .
+       (identifier)) @name) @item)
+  (#not-any-of? @_scope "g:" "s:"))
+
 (script_file
   (let_statement
     .
-    [(identifier) (scoped_identifier)] @name) @item)
+    (identifier) @name) @item)
 
 ((let_statement
    .
