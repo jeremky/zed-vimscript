@@ -40,11 +40,20 @@ formatter — no extra script to install, everything lives in your own Zed
       "formatter": {
         "external": {
           "command": "vim",
-          "arguments": ["-Nes", "-u", "NONE", "-i", "NONE", "-c", "set ft=vim | runtime! indent/vim.vim | set expandtab shiftwidth=2 | execute \"normal! gg=G\" | wq! /dev/stdout", "/dev/stdin"]
-        }
-      }
-    }
-  }
+          "arguments": [
+            "-Nes",
+            "-u",
+            "NONE",
+            "-i",
+            "NONE",
+            "-c",
+            "set ft=vim | runtime! indent/vim.vim | set expandtab shiftwidth=2 | execute \"normal! gg=G\" | wq! /dev/stdout",
+            "/dev/stdin",
+          ],
+        },
+      },
+    },
+  },
 }
 ```
 
