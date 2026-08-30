@@ -1,9 +1,9 @@
 id = "vimscript"
 name = "Vimscript"
-version = "0.1.0"
+version = "0.2.0"
 schema_version = 1
 authors = ["JeremKy"]
-description = "Vimscript language support."
+description = "Syntax highlighting, indentation, folding, outline, and bracket matching for Vimscript (.vim/.vimrc)."
 repository = "https://github.com/jeremky/zed-vimscript"
 languages = ["languages/vim"]
 
